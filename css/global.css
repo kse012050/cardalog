@@ -1,0 +1,21 @@
+/* 폰트 */
+header > div .linkArea{font-family: 'Pretendard';}
+
+/* 컨텐츠 사이즈 */
+.contentSize{max-width: 1180px; margin: 0 auto;}
+
+/* 해더 */
+header{position: fixed; left: 0; top: 0; width: 100%; height: 90px;}
+header > div{height: 100%; display: flex; justify-content: space-between; align-items: center;}
+header > div h1{max-width: 140px;}
+header > div h1 img{width: 100%;}
+header > div .linkArea{width: 64px; height: 48px; display: flex; justify-content: center; align-items: center; position: relative;}
+header > div .linkArea button{width: 100%; display: flex; align-items: center; font-size: 16px; font-weight: 700; color: white;}
+header > div .linkArea button::before , 
+header > div .linkArea button::after{content: ''; background-repeat: no-repeat; background-position: center; background-size: cover;}
+header > div .linkArea button::before{width: 26px; height: 26px; background-image: url('../images/icon-language.png'); margin-right: 4px;}
+header > div .linkArea button::after{width: 10px; height: 10px; background-image: url('../images/icon-more.png'); margin-left: 5px;}
+header > div .linkArea div{position: absolute; left: 0; top: 100%; width: 100%; padding: 10px 0; background-color: white; border: 1px solid #222;}
+header > div .linkArea div a{display: block; font-size: 14px; font-weight: 700; color: #999896; line-height: 30px; text-align: center;}
+header > div .linkArea div a:not(:last-child){margin-bottom: 2px;}
+header > div .linkArea div a:is(:hover , .active){color: #222;}
