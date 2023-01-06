@@ -7,14 +7,16 @@
     <!-- Iphone 모바일 확대 방지  maximum-scale=1.0, user-scalable=0-->
     <title>Cardalog</title> 
     <link rel="stylesheet" href="css/import.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="js/common.js"></script>
 </head>
 <body>
     <header>
         <div class="contentSize">
             <h1><img src="images/logo.png" alt=""></h1>
             <div class="linkArea">
-                <button>KR</button>
-                <div>
+                <button data-btn="tab">KR</button>
+                <div data-tab="area">
                     <a href="">KR</a>
                     <a href="">EN</a>
                     <a href="">IN</a>
@@ -39,7 +41,7 @@
     <div class="mainArea">
         <div class="contentSize">
             <p>Hey, What’s up?</p>
-            <h2><img src="images/main-title.png" alt=""></h2>
+            <h2><img src="images/main-title.png" alt="Cardalog Card&Dialog"></h2>
             <ul>
                 <li><a href="">App Store</a></li>
                 <li><a href="">Google Play</a></li>
@@ -56,7 +58,7 @@
         </p>
     </section>
 
-    <section>
+    <section class="bgColor">
         <div class="contentSize">
             <h2>랜덤 대화는 <mark>이제 그만!</mark></h2>
             <p>
@@ -77,8 +79,24 @@
         </p>
     </section>
 
-    <footer>
-        <div class="contentSize"></div>
+    <footer class="bgColor">
+        <div class="contentSize">
+            <h2><img src="images/logo-color.png" alt="Cardalog point color"></h2>
+            <ul>
+                <li><a href="">서비스 이용약관</a></li>
+                <li><a href="">개인정보 처리방침</a></li>
+                <li><a href="">청소년 보호 정책</a></li>
+                <li><a href="">문의 및 제휴</a></li>
+            </ul>
+            <address>
+                <p>대표자 조원선</p>
+                <p>이메일 cardaloghelp@gmail.com</p>
+                <p>사업자등록번호 572-87-02163</p>
+                <p>통신판매업신고 2019-경기김포-2282</p>
+                <p>주소 인천 연수구 아트센터대로168번길 101, A동 35층 3502호</p>
+            </address>
+            <p>Copyright © Cardalog Inc. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
