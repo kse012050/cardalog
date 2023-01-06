@@ -1,12 +1,7 @@
-/* 폰트 */
-header > div .linkArea ,
-section{font-family: 'Pretendard';}
-
-.mainArea div p{font-family: 'SUIT', sans-serif;}
-@media screen and (min-width : 1101px) {
+@media screen and (min-width : 600px) and (max-width : 1100px) {
     /* 컨텐츠 사이즈 */
-    .contentSize{max-width: 1180px; width: calc(100% - 40px); margin: 0 auto;}
-    :is(header , footer) > div{max-width: 1180px; width: calc(100% - 40px); margin: 0 auto;}
+    .contentSize{max-width: 810px; width: calc(100% - 40px); margin: 0 auto;}
+    :is(header , footer) > div{width: calc(100% - 40px); margin: 0 auto;}
 
     /* 배경색 */
     .bgColor{background-color: #f7f9f8;}
@@ -30,7 +25,13 @@ section{font-family: 'Pretendard';}
     /* 푸터 */
     footer{padding: 50px 0 60px;}
     footer div{position: relative; line-height: 30px;}
-    footer div h2{position: absolute; right: 0; top: -20px; width: 140px;}
+    footer div h2{width: 140px;}
+    @media screen and (min-width : 769px) {
+        footer div h2{position: absolute; right: 0; top: -20px;}
+    }
+    @media screen and (max-width : 768px) {
+        footer div h2{position: static;}
+    }
     footer div h2 img{width: 100%;}
     footer div ul{display: flex; margin-bottom: 30px;}
     footer div ul li:not(:last-child){margin-right: 30px;}
