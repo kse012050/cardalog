@@ -1,4 +1,4 @@
-@media screen and (min-width : 600px) and (max-width : 1100px) {
+@media screen and (min-width : 601px) and (max-width : 1100px) {
     /* 컨텐츠 사이즈 */
     .contentSize{max-width: 810px; width: calc(100% - 40px); margin: 0 auto;}
     :is(header , footer) > div{width: calc(100% - 40px); margin: 0 auto;}
