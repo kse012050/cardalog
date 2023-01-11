@@ -75,7 +75,7 @@
     section:nth-of-type(2n + 1) , section:nth-of-type(2n) > div{height: 640px; display: flex; flex-direction: column; justify-content: center; background-repeat: no-repeat;}
     section:nth-of-type(2n + 1){background-position: left center; background-size: 50%; align-items: flex-end;}
     section:nth-of-type(2n + 1) > *{width: 460px;}
-    section:nth-of-type(2n) > div{background-position: right center; background-size: 56.55%;}
+    section:nth-of-type(2n) > div{background-position: right center; background-size: 59.55%;}
     section:nth-of-type(1){background-image: url('../images/value-img.png');}
     section:nth-of-type(2) > div{background-image: url('../images/stop-img.png');}
     section:nth-of-type(3){background-image: url('../images/gift-img.png');}    
