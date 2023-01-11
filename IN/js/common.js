@@ -1,12 +1,22 @@
 $(document).ready(function(){
+
+    $(window).scroll(function(){
+        $(this).scrollTop() > 0 ?
+            $('header').addClass('active') : 
+            $('header').removeClass('active');
+
+        $('[data-dropbox="area"]').slideUp();
+    })
+
+    // 언어 텝 메뉴
     $('body').click(function(){
-        $('[data-tab="area"]').stop().slideUp();
+        $('[data-dropbox="area"]').stop().slideUp();
     })
-    $('[data-btn="tab"]').click(function(e){
+    $('[data-btn="dropbox"]').click(function(e){
         e.stopPropagation();
-        $('[data-tab="area"]').stop().slideToggle();
+        $('[data-dropbox="area"]').stop().slideToggle();
     })
-    $('[data-tab="area"]').click(function(e){
+    $('[data-dropbox="area"]').click(function(e){
         e.stopPropagation();
     })
 })
