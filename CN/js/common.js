@@ -1,0 +1,12 @@
+$(document).ready(function(){
+    $('body').click(function(){
+        $('[data-tab="area"]').stop().slideUp();
+    })
+    $('[data-btn="tab"]').click(function(e){
+        e.stopPropagation();
+        $('[data-tab="area"]').stop().slideToggle();
+    })
+    $('[data-tab="area"]').click(function(e){
+        e.stopPropagation();
+    })
+})
